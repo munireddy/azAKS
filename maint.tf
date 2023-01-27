@@ -13,7 +13,7 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "rg" {
-  name     = "Azure subscription 1"
+  name     = "Azure_subscription_2"
   location = "EastUS2"
 }
 
