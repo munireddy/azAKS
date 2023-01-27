@@ -11,12 +11,14 @@ provider "azurerm" {
   features {}
 }
 
+
+resource "azurerm_resource_group" "rg" {
+  name     = "Azure subscription 1"
+  location = "EastUS2"
+}
+
 resource "null_resource" "default" {
   provisioner "local-exec" {
     command = "echo 'Sample to test Terraform on Azure'"
   }
 }
-#resource "azurerm_resource_group" "rg" {
-#  name     = "learnk8sResourceGroup"
-#  location = "northeurope"
-#}
