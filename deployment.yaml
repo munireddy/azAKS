@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azaks-kubernetes
+spec:
+  selector:
+    matchLabels:
+      name: azaks-kubernetes
+  template:
+    metadata:
+      labels:
+        name: azaks-kubernetes
+    spec:
+      containers:
+        - name: app
+          image: henryazacr/sampleapp
+          ports:
+            - containerPort: 8080
