@@ -1,0 +1,4 @@
+kubectl create -f ./windeployment.yaml
+kubectl create -f ./winservice.yaml
+kubectl get pods
+http://20.237.58.96/WebForm1.aspx
